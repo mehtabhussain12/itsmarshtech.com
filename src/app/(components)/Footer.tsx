@@ -42,22 +42,20 @@ const Footer :FC=()=>{
         <h3 className="text-lg font-bold mb-4">CONTACTS</h3>
         <ul className="list-none">
           <li>Itsmarshtech@gmail.com</li>
-          <li>+923430807081</li>
-          <li>+923102103182</li>
+          
+          <li>+923273366851</li>
         </ul>
         <div className="flex gap-x-4 mt-4 ">
-                <Link href={"https://www.instagram.com/marsh_tech/"}>
+                <Link href={"https://www.instagram.com/itsmarshtech/"}>
                   <AiOutlineInstagram size={30} />
                 </Link>
-                <Link href={"https://www.facebook.com/profile.php?id=61557085895103"}>
+                <Link href={"https://www.facebook.com/profile.php?id=61570202435155"}>
                   <AiOutlineFacebook size={30} />
                 </Link>
-                <Link href={"www.linkedin.com/in/itsmarshtech"}>
+                <Link href={"https://www.linkedin.com/feed/update/urn:li:activity:7280226503122898945"}>
                   <AiOutlineLinkedin size={30} />
                 </Link>
-                <Link href={"https://github.com/mehtabhussain12"}>
-                  <AiOutlineGithub size={30} />
-                </Link>
+                
               </div>
       </div>
      

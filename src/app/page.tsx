@@ -11,12 +11,10 @@ import Why from "./(components)/Why";
 export default function Home() {
   return (
   <>
-  <h1>Hello</h1>
- 
   <Cards/>
-  <About/>
-  <Skills/>
   <Why/>
+  <About/>
+  {/* <Skills/> */}
   <Form/>
   <FaqItem/>
   <Footer/>

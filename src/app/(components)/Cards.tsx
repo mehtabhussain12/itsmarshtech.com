@@ -1,158 +1,81 @@
 import React from "react";
 import { FC } from "react";
-
 import Image from "next/image";
 
 const Cards: FC = () => {
   return (
-    <>
-      <div className="bg-slate-100 ">
-        <h1 className="text-4xl font-bold  flex justify-center  mb-4   mt-20 ml-4">
-          WEB DEVELOPMENT SERVICES WE OFFER
+    <section className="bg-[#f3f8fc] py-16">
+      <div className="container  px-6 md:px-12 lg:px-20">
+        <h1 className="text-4xl font-extrabold text-center text-[#0077b6]">
+          Our Specialized Services
         </h1>
-        <p className="  text-center text-xl mt-4 text-gray-400 ml-4">
-          Our web development team combines years of experience with an
-          understanding of the most up-to-date
-          <br /> programming skills and approaches. When we build your app,
-          we'll leverage the latest development innovations.
-          <br /> The entire process is built around your precise specifications
-          and requirements.
+        <p className="text-lg text-center text-gray-600 mt-6 max-w-3xl mx-auto">
+          We specialize in creating tailored websites for restaurants, cafes, 
+          ice cream parlors, and other businesses. Each solution is designed 
+          to meet your unique needs.
         </p>
-
-        <div className="flex justify-center p-4 gap-3 flex-col md:flex-row">
-          <div className="max-w-xs rounded overflow-hidden mt-14 bg-white relative cursor-pointer hover:shadow-lg transition-transform duration-300 transform hover:-translate-y-1">
-            <div className="flex justify-center">
+        <div className="grid gap-8 mt-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Restaurant Websites */}
+          <div className="group relative bg-white rounded-lg shadow-md hover:shadow-lg transition hover:-translate-y-2 transform duration-300">
+            <div className="p-6 flex flex-col items-center">
               <Image
-                src="/web.png"
-                alt="Logo"
-                width={250}
-                height={225}
-                className="hover:scale-110 flex justify-center"
+                src="/restaurant.png"
+                alt="Restaurant Websites"
+                width={350}
+                height={350}
+                className="mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md shadow-[#9bcfec] "
               />
-            </div>
-            <div className="px-4 py-2 text-center">
-              <div className="text-sm font-semibold mb-1">
-                Websites Application{" "}
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-[#9cc3d5ff] opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-              <div className="px-4 py-2 text-center">
-                <p className="text-gray-600 text-sm">
-                  Custom web development, responsive design, e-commerce
-                  solutions, CMS, web applications, SEO-friendly, experienced
-                  team, timely delivery, excellent support.
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-[#0077b6] mb-2">
+                Restaurant Websites
+              </h3>
+              <p className="text-sm text-gray-500 text-center">
+                Showcase your menu, ambiance, and customer reviews with an 
+                engaging online presence.
+              </p>
             </div>
           </div>
-
-          <div className="max-w-xs rounded overflow-hidden mt-14 bg-white relative cursor-pointer hover:shadow-lg transition-transform duration-300 transform hover:-translate-y-1">
-            <div className="flex justify-center">
+          {/* E-commerce Solutions */}
+          <div className="group relative bg-white rounded-lg shadow-md hover:shadow-lg transition hover:-translate-y-2 transform duration-300">
+            <div className="p-6 flex flex-col items-center">
               <Image
-                src="/ecom.png"
-                alt="Logo"
-                width={250}
-                height={225}
-                className="hover:scale-110 flex justify-center"
+                src="/ecommerce.png"
+                alt="E-commerce Solutions"
+                width={350}
+                height={350}
+                className="mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md shadow-[#9bcfec]"
               />
-            </div>
-            <div className="px-4 py-2 text-center">
-              <div className="font-semibold text-sm mb-1">
-                eCommerce Websites
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-[#9cc3d5ff] opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-              <div className="px-4 py-2 text-center">
-                <p className="text-gray-600 text-sm">
-                  Custom web development, responsive design, e-commerce
-                  solutions, CMS, web applications, SEO-friendly, experienced
-                  team, timely delivery, excellent support.
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-[#0077b6] mb-2">
+                E-commerce Solutions
+              </h3>
+              <p className="text-sm text-gray-500 text-center">
+                Build online stores to sell your products and services 
+                with seamless payment integration.
+              </p>
             </div>
           </div>
-
-          <div className="max-w-xs rounded overflow-hidden mt-14 bg-white relative cursor-pointer hover:shadow-lg transition-transform duration-300 transform hover:-translate-y-1">
-            <div className="flex justify-center">
+          {/* Ice Cream Parlors */}
+          <div className="group relative bg-white rounded-lg shadow-md hover:shadow-lg transition hover:-translate-y-2 transform duration-300">
+            <div className="p-6 flex flex-col items-center">
               <Image
-                src="/mob.png"
-                alt="Logo"
-                width={200}
-                height={225}
-                className="hover:scale-110 flex justify-center"
+                src="/icecream.png"
+                alt="Ice Cream Parlors"
+                width={350}
+                height={350}
+                className="mb-4 group-hover:scale-110 transition-transform duration-300"
               />
-            </div>
-            <div className="px-4 py-2 text-center">
-              <div className="font-semibold text-sm mb-1">
-                Mobile Applications
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-[#9cc3d5ff] opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-              <div className="px-4 py-2 text-center">
-                <p className="text-gray-600 text-sm">
-                  Our mobile solutions are meticulously designed to deliver
-                  seamless user experiences while adeptly addressing the
-                  distinctive requirements of your business.
-                </p>
-              </div>
+              <h3 className="text-xl font-semibold text-[#0077b6] mb-2">
+                Ice Cream Parlors
+              </h3>
+              <p className="text-sm text-gray-500 text-center">
+                Create vibrant websites that highlight your ice cream 
+                flavors and unique offerings.
+              </p>
             </div>
           </div>
-
-          <div className="max-w-xs rounded overflow-hidden mt-14 bg-white relative cursor-pointer hover:shadow-lg transition-transform duration-300 transform hover:-translate-y-1">
-            <div className="flex justify-center">
-              <Image
-                src="/graphic.png"
-                alt="Logo"
-                width={250}
-                height={225}
-                className="hover:scale-110 flex justify-center"
-              />
-            </div>
-            <div className="px-4 py-2 text-center">
-              <div className="font-semibold text-sm mb-1">
-                Graphic design & UI/UX
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-[#9cc3d5ff] opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-              <div className="px-4 py-2 text-center">
-                <p className="text-gray-600 text-sm">
-                  we offer comprehensive Graphic Design & UI/UX solutions aimed
-                  at elevating your digital presence and enhancing user
-                  engagement.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="max-w-xs rounded overflow-hidden mt-14 bg-white relative cursor-pointer hover:shadow-lg transition-transform duration-300 transform hover:-translate-y-1">
-            <div className="flex justify-center">
-              <Image
-                src="/soft.png"
-                alt="Logo"
-                width={230}
-                height={225}
-                className="hover:scale-110 flex justify-center"
-              />
-            </div>
-            <div className="px-4 py-2 text-center">
-              <div className="font-semibold text-sm mb-1">
-                software development
-              </div>
-            </div>
-            <div className="absolute inset-0 bg-[#9cc3d5ff] opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-              <div className="px-4 py-2 text-center">
-                <p className="text-gray-600 text-sm">
-                  we specialize in delivering bespoke software solutions
-                  tailored to meet the diverse needs and challenges of modern
-                  businesses. With a dedicated team of experienced developers
-                  and engineers.
-                </p>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
